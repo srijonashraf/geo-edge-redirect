@@ -1,5 +1,5 @@
 export const config = {
-  runtine: "edge",
+  runtime: "edge", // Fixed typo in "runtime"
 };
 
 export default async function handler(req) {
@@ -13,5 +13,8 @@ export default async function handler(req) {
 
   const target = redirectMap[country] || "/us.html";
 
-  return Response.redirect(target, 307);
+  // Create a full URL by combining the request URL's origin with the target path
+  const url = new URL(target, req.url);
+
+  return Response.redirect(url.toString(), 307);
 }
