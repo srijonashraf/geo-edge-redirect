@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geo-Redirect | United States</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        color: #333;
+        line-height: 1.6;
+        background-color: #f8f9fa;
+      }
+
+      .header {
+        background: linear-gradient(135deg, #3c3b6e, #b22234);
+        color: white;
+        padding: 2rem 0;
+        text-align: center;
+        position: relative;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .header h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      .intro {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 3rem;
+        align-items: center;
+      }
+
+      @media (min-width: 768px) {
+        .intro {
+          flex-direction: row;
+        }
+      }
+
+      .intro-text {
+        flex: 1;
+      }
+
+      .intro-image {
+        flex: 1;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .intro-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .section {
+        background-color: white;
+        border-radius: 10px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      }
+
+      .section h2 {
+        color: #3c3b6e;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid #b22234;
+        padding-bottom: 0.5rem;
+      }
+
+      .landmarks {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 2rem;
+      }
+
+      .landmark {
+        background-color: #f8f9fa;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .landmark:hover {
+        transform: translateY(-5px);
+      }
+
+      .landmark img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .landmark-info {
+        padding: 1.5rem;
+      }
+
+      .landmark-info h3 {
+        color: #3c3b6e;
+        margin-bottom: 0.5rem;
+      }
+
+      .fact-list {
+        list-style-type: none;
+        margin-top: 1rem;
+      }
+
+      .fact-list li {
+        margin-bottom: 0.5rem;
+        padding-left: 1.5rem;
+        position: relative;
+      }
+
+      .fact-list li:before {
+        content: "★";
+        color: #b22234;
+        position: absolute;
+        left: 0;
+      }
+
+      .footer {
+        text-align: center;
+        padding: 2rem;
+        background-color: #3c3b6e;
+        color: white;
+        margin-top: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <h1>Welcome to the United States of America</h1>
+        <p>Land of the free, home of the brave</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="intro">
+        <div class="intro-text">
+          <h2>About the United States</h2>
+          <p>
+            The United States of America is a diverse and vast country spanning
+            3.8 million square miles across North America. With 50 states, it's
+            home to over 330 million people from countless cultural backgrounds,
+            making it one of the most multicultural nations in the world.
+          </p>
+          <p>
+            From the bustling streets of New York City to the serene landscapes
+            of the Grand Canyon, the United States offers an incredible variety
+            of experiences, landscapes, and cultures.
+          </p>
+
+          <ul class="fact-list">
+            <li><strong>Capital:</strong> Washington, D.C.</li>
+            <li><strong>Largest City:</strong> New York City</li>
+            <li>
+              <strong>Official Language:</strong> No official language at
+              federal level (English is predominant)
+            </li>
+            <li><strong>Population:</strong> 330+ million</li>
+            <li><strong>Currency:</strong> United States Dollar (USD)</li>
+          </ul>
+        </div>
+        <div class="intro-image">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/USA_Flag_Map.svg/1200px-USA_Flag_Map.svg.png"
+            alt="Map of the United States with flag"
+          />
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>History</h2>
+        <p>
+          The United States declared independence from Great Britain on July 4,
+          1776, an event celebrated annually as Independence Day. The American
+          Revolution followed, establishing the world's first constitutional
+          democracy based on the principles of liberty, equality, and
+          self-governance.
+        </p>
+        <p>
+          Throughout its history, the United States has experienced significant
+          transformations—from the Civil War and the abolition of slavery to the
+          Civil Rights Movement, becoming a global superpower after World War
+          II, and continuing to evolve as a diverse, dynamic society in the 21st
+          century.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Culture</h2>
+        <p>
+          American culture is a rich tapestry woven from diverse influences.
+          Often described as a "melting pot" or "salad bowl," the United States
+          embraces contributions from indigenous peoples, European settlers,
+          African Americans, Latin Americans, Asians, and immigrants from around
+          the world.
+        </p>
+        <p>
+          From Hollywood movies and Broadway shows to jazz, rock 'n' roll,
+          hip-hop, and country music, American cultural exports have influenced
+          global entertainment. American literature, art, and cuisine similarly
+          reflect the nation's diverse heritage and innovative spirit.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Famous Landmarks</h2>
+        <div class="landmarks">
+          <div class="landmark">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Statue_of_Liberty%2C_NY.jpg/1200px-Statue_of_Liberty%2C_NY.jpg"
+              alt="Statue of Liberty"
+            />
+            <div class="landmark-info">
+              <h3>Statue of Liberty</h3>
+              <p>
+                A symbol of freedom and democracy, the Statue of Liberty stands
+                on Liberty Island in New York Harbor, welcoming visitors and
+                immigrants to the United States.
+              </p>
+            </div>
+          </div>
+
+          <div class="landmark">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Grand_Canyon_at_sunset%2C_view_from_Hopi_Point.jpg/1200px-Grand_Canyon_at_sunset%2C_view_from_Hopi_Point.jpg"
+              alt="Grand Canyon"
+            />
+            <div class="landmark-info">
+              <h3>Grand Canyon</h3>
+              <p>
+                One of the world's most spectacular natural wonders, the Grand
+                Canyon in Arizona showcases millions of years of geological
+                history through its colorful layers.
+              </p>
+            </div>
+          </div>
+
+          <div class="landmark">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/White_House_Washington.JPG/1200px-White_House_Washington.JPG"
+              alt="White House"
+            />
+            <div class="landmark-info">
+              <h3>The White House</h3>
+              <p>
+                Located in Washington, D.C., the White House has been the
+                official residence and workplace of the President of the United
+                States since 1800.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Discover the beauty and diversity of the United States of America</p>
+      <p>Images sourced from Wikimedia Commons (Public Domain)</p>
+    </div>
+  </body>
+</html>

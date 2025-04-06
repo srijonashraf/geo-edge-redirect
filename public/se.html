@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geo-Redirect | Sweden</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        color: #333;
+        line-height: 1.6;
+        background-color: #f8f9fa;
+      }
+
+      .header {
+        background: linear-gradient(135deg, #006aa7, #fecc00);
+        color: white;
+        padding: 2rem 0;
+        text-align: center;
+        position: relative;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .header h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      .intro {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 3rem;
+        align-items: center;
+      }
+
+      @media (min-width: 768px) {
+        .intro {
+          flex-direction: row;
+        }
+      }
+
+      .intro-text {
+        flex: 1;
+      }
+
+      .intro-image {
+        flex: 1;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .intro-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .section {
+        background-color: white;
+        border-radius: 10px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      }
+
+      .section h2 {
+        color: #006aa7;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid #fecc00;
+        padding-bottom: 0.5rem;
+      }
+
+      .landmarks {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 2rem;
+      }
+
+      .landmark {
+        background-color: #f8f9fa;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .landmark:hover {
+        transform: translateY(-5px);
+      }
+
+      .landmark img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .landmark-info {
+        padding: 1.5rem;
+      }
+
+      .landmark-info h3 {
+        color: #006aa7;
+        margin-bottom: 0.5rem;
+      }
+
+      .fact-list {
+        list-style-type: none;
+        margin-top: 1rem;
+      }
+
+      .fact-list li {
+        margin-bottom: 0.5rem;
+        padding-left: 1.5rem;
+        position: relative;
+      }
+
+      .fact-list li:before {
+        content: "★";
+        color: #fecc00;
+        position: absolute;
+        left: 0;
+      }
+
+      .footer {
+        text-align: center;
+        padding: 2rem;
+        background-color: #006aa7;
+        color: white;
+        margin-top: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <h1>Welcome to Sweden</h1>
+        <p>Land of Innovation, Nature, and Nordic Charm</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="intro">
+        <div class="intro-text">
+          <h2>About Sweden</h2>
+          <p>
+            Sweden, officially the Kingdom of Sweden, is a Nordic country
+            located in Northern Europe. With its stunning landscapes, innovative
+            culture, and high quality of life, Sweden consistently ranks among
+            the world's most livable countries.
+          </p>
+          <p>
+            From the picturesque archipelagos of Stockholm to the vast
+            wilderness of Lapland, Sweden offers visitors a perfect blend of
+            urban sophistication and natural beauty, all infused with the famous
+            Swedish concept of "lagom" (just the right amount).
+          </p>
+
+          <ul class="fact-list">
+            <li><strong>Capital:</strong> Stockholm</li>
+            <li><strong>Official Language:</strong> Swedish</li>
+            <li><strong>Population:</strong> 10+ million</li>
+            <li><strong>Currency:</strong> Swedish Krona (SEK)</li>
+            <li><strong>Government:</strong> Constitutional Monarchy</li>
+          </ul>
+        </div>
+        <div class="intro-image">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png"
+            alt="Swedish flag"
+          />
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>History</h2>
+        <p>
+          Sweden's history spans thousands of years, from the Viking Age
+          (8th-11th centuries) when Norse seafarers explored, traded, and raided
+          across Europe, to its emergence as a major European power in the 17th
+          century under King Gustav II Adolf.
+        </p>
+        <p>
+          In modern times, Sweden has transformed from an agricultural society
+          into one of the world's most innovative economies. Since 1814, Sweden
+          has maintained a policy of neutrality in armed conflicts, which kept
+          it out of both World Wars. Today, Sweden is known for its progressive
+          social policies, technological innovation, and commitment to
+          sustainability.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Culture</h2>
+        <p>
+          Swedish culture is characterized by equality, modesty, and a deep
+          appreciation for nature. The concept of "allemansrätten" (the right of
+          public access) allows everyone to roam freely in nature, reflecting
+          Swedes' close relationship with their natural environment.
+        </p>
+        <p>
+          Sweden has given the world iconic cultural exports, from ABBA and
+          Swedish design to literary figures like Astrid Lindgren (creator of
+          Pippi Longstocking) and Stieg Larsson. Swedish traditions like
+          Midsummer celebrations, Lucia Day, and fika (coffee break) are
+          cherished aspects of daily life that visitors can experience.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Famous Landmarks</h2>
+        <div class="landmarks">
+          <div class="landmark">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Stockholm_City_Hall_2019.jpg/1200px-Stockholm_City_Hall_2019.jpg"
+              alt="Stockholm City Hall"
+            />
+            <div class="landmark-info">
+              <h3>Stockholm City Hall</h3>
+              <p>
+                One of Sweden's most famous buildings, the City Hall hosts the
+                Nobel Prize banquet annually. Its iconic tower offers panoramic
+                views of Stockholm's beautiful archipelago.
+              </p>
+            </div>
+          </div>
+
+          <div class="landmark">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/IceHotel_2007.jpg/1200px-IceHotel_2007.jpg"
+              alt="Ice Hotel"
+            />
+            <div class="landmark-info">
+              <h3>Ice Hotel</h3>
+              <p>
+                Located in Jukkasjärvi, this unique hotel is rebuilt each winter
+                entirely from ice and snow. It features stunning ice sculptures
+                and offers guests a truly unforgettable Arctic experience.
+              </p>
+            </div>
+          </div>
+
+          <div class="landmark">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Gamla_Stan_February_2013_01.jpg/1200px-Gamla_Stan_February_2013_01.jpg"
+              alt="Gamla Stan"
+            />
+            <div class="landmark-info">
+              <h3>Gamla Stan (Old Town)</h3>
+              <p>
+                Stockholm's charming old town dates back to the 13th century.
+                With its narrow cobblestone streets, colorful buildings, and
+                medieval architecture, it's one of Europe's best-preserved
+                historic centers.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Discover the beauty and innovation of Sweden</p>
+      <p>Images sourced from Wikimedia Commons (Public Domain)</p>
+    </div>
+  </body>
+</html>
