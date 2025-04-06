@@ -3,8 +3,8 @@ export const config = {
 };
 
 export default async function handler(req) {
-  const country = req.geo?.country;
-  console.log(req.geo);
+  const country = req.headers?.get("x-vercel-ip-country");
+
   console.log("Requested country: ", country);
 
   const redirectMap = {
