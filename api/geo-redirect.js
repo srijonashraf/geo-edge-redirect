@@ -1,9 +1,10 @@
 export const config = {
-  runtime: "edge", // Fixed typo in "runtime"
+  runtime: "edge",
 };
 
 export default async function handler(req) {
   const country = req.geo?.country || "US";
+  console.log("Request country: ", country);
 
   const redirectMap = {
     US: "/us.html",
