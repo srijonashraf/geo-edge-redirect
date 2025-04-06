@@ -3,8 +3,9 @@ export const config = {
 };
 
 export default async function handler(req) {
-  const country = req.geo?.country || "US";
-  console.log("Request country: ", country);
+  const country = req.geo?.country;
+  console.log(req.geo);
+  console.log("Requested country: ", country);
 
   const redirectMap = {
     US: "/us.html",
@@ -13,8 +14,6 @@ export default async function handler(req) {
   };
 
   const target = redirectMap[country] || "/us.html";
-
-  // Create a full URL by combining the request URL's origin with the target path
   const url = new URL(target, req.url);
 
   return Response.redirect(url.toString(), 307);
